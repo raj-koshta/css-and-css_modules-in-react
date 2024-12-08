@@ -1,0 +1,64 @@
+/* Card Container */
+.card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    background-color: #fff;
+}
+
+/* Hover Effects */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+/* Card Image */
+.card-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Card Content */
+.card-content {
+    padding: 15px;
+}
+
+/* Card Title */
+.card-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0 0 10px;
+    font-weight: bold;
+}
+
+/* Card Description */
+.card-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    margin: 0 0 15px;
+}
+
+/* Button */
+.card-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.card-button:hover {
+    background-color: #0056b3;
+}
