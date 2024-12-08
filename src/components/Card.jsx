@@ -1,14 +1,15 @@
 import React from 'react'
 import style from '../modules/style.module.css'
 
-const Card = () => {
+const Card = (data) => {
+    const item = data.data
     return (
-        <div class={style.card}>
-            <img src="https://via.placeholder.com/300x200" alt="Card image" class={style["card-image"]} />
-                <div class={style["card-content"]}>
-                    <h2 class={style["card-title"]}>Card Title</h2>
-                    <p class={style["card-description"]}>This is a description of the card. Add any relevant details here.</p>
-                    <button class={style["card-button"]}>Learn More</button>
+        <div className={style.card}>
+            <img src={item.img_url} alt="Card image" className={style["card-image"]} />
+                <div className={style["card-content"]}>
+                    <h2 className={style["card-title"]}>{item.name}</h2>
+                    <p className={style["card-description"]}>{item.description}</p>
+                    <a href={item.watch_url} className={style["card-button"]}>Watch Now</a>
                 </div>
         </div>
     )
